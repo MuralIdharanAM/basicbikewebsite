@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Bike Design</title>    
+</head>
+<body>
+    <div class="container">
+        <div class="path">
+        </div>
+        <ul>
+            <li> <a herf="#" >Home</a></li>
+            <li><a herf="#" >Services</a></li>
+            <li><a herf="#">Contact</a></li>
+            <li><a herf="#">About Us</a></li>
+        </ul>
+        <div class="thumbnail">
+        <li><img src="Yamaha.png"onclick="big('Yamaha.png');path('#e5e5e5');bg('linear-gradient(50deg,blue,skyblue)')"></li>
+        <li><img src="rc.png"onclick="big('rc.png');path('white');bg('linear-gradient(60deg,red,orange)')"></li>
+        <li><img src="ninja.png"onclick="big('ninja.png');path('#e5e5e5');bg('linear-gradient(70deg,gold,green)')"></li>
+    </div>
+    <div class="big-img">
+         <img src="md.png" class="big">
+     </div>
+     <div class="content">
+            <p>&#x1F525; Let's ride &#x1F525;</p>
+            <br>
+            <h1>Don't Fear Dying <br>&nbsp; Fear Not Living</h1>
+            <br>
+            <h5>&#x1F60E;For Bike Lovers & Bike Riders&#x1f49D;</h5>
+         </div>
+    </div>
+</body>
+<script>
+    function big(img)
+    {
+        document.querySelector('.big').src=img;
+    }
+   function path(color)
+   {
+    const path=document.querySelector('.path');
+    path.style.background =color;
+   } 
+   function bg(background)
+   {
+    const bg=document.querySelector('.container');
+    bg.style.background = background;
+   }
+</script>
+</html>
